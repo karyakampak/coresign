@@ -55,17 +55,43 @@ services:
       networks: 
         - app-network
 
+  #mysql
   database:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-    volumes:
-      - db_data:/var/lib/postgresql/data
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql  # Optional: initialization script
-    networks:
-      - app-network
+      container_name: coresign_db
+      image: mysql:8.0
+      restart: unless-stopped
+      tty: true
+      environment: 
+          MYSQL_DATABASE: coresign
+          MYSQL_ROOT_PASSWORD: karyakampak
+          MYSQL_USER: karyadidk
+          MYSQL_PASSWORD: karyakampak
+          SERVICE_TAGS: dev
+          SERVICE_NAME: mysql
+          TZ: Asia/Jakarta
+      volumes: 
+          - ./dbdata/mysql:/var/lib/mysql
+          # - ./docker/container/my.cnf:/etc/mysql/my.cnf
+          # - ./docker/container/mysql/log:/var/log/mysql
+      ports: 
+          - "3307:3306"
+      networks: 
+        - app-network
+
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: coresign_pma
+      links:
+        - database
+      environment:
+          PMA_HOST: coresign_db
+          PMA_PORT: 3306
+          PMA_ARBITRARY: 1
+      restart: unless-stopped
+      ports:
+        - 8081:80
+      networks: 
+        - app-network
 
 volumes:
   db_data:

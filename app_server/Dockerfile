@@ -30,9 +30,6 @@ USER root
 
 RUN apt-get update && apt-get install -y \
         cmake \
-        openssl \
-        libssl-dev \
-        libcurl4-openssl-dev \
         zip \
         curl \
         unzip \
@@ -62,9 +59,9 @@ RUN cp libcrypto.so.* /lib/x86_64-linux-gnu/
 
 RUN apt install -y python3-flask python3-sqlalchemy python3-psycopg2
 
-WORKDIR /home/library/coresign/build
+# WORKDIR /home/library/coresign/build
 
-RUN cmake ..
+#vRUN cmake ..
 
 # RUN make
 

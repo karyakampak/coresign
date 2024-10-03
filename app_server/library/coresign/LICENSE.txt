@@ -1,0 +1,30 @@
+DKSign Library License
+
+This is a legal agreement ("Agreement") between you (either an individual or a single entity) and Balai Sertifikat Elektronik ("Licensor"). By using the PDF Signature Library, you agree to be bound by the terms of this Agreement.
+
+1. License Grant:
+   Licensor hereby grants you a non-exclusive, non-transferable license to use the PDF Signature Library ("the Library") for the purpose of integrating PDF signature functionality into your software application.
+
+2. Restrictions:
+   - You may not redistribute the Library or any modified versions of the Library.
+   - You may not sublicense, rent, lease, sell, or otherwise transfer rights to the Library.
+
+3. Proprietary Rights:
+   All title, ownership rights, and intellectual property rights in and to the Library are owned by Licensor. The Library is protected by copyright laws and international treaty provisions.
+
+4. Disclaimer of Warranty:
+   THE LIBRARY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE LIBRARY OR THE USE OR OTHER DEALINGS IN THE LIBRARY.
+
+5. Termination:
+   This Agreement is effective until terminated. Licensor may terminate this Agreement at any time if you fail to comply with any term of this Agreement. Upon termination, you must destroy all copies of the Library in your possession.
+
+6. Governing Law:
+   This Agreement shall be governed by and construed in accordance with the laws of Indonesia.
+
+7. Entire Agreement:
+   This Agreement constitutes the entire agreement between you and Licensor regarding the subject matter hereof and supersedes all prior or contemporaneous agreements, understandings, and communications, whether written or oral.
+
+Balai Sertifikat Elektronik
+Jakarta Selatan
+DKI Jakarta, Indonesia
+Email: dwi.karyadi@bssn.go.id

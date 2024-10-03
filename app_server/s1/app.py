@@ -160,7 +160,7 @@ def sign():
     hash = b'pZGm1Av0IEBKARczz7exkNYsZb8LzaMrV7J32a2fFG4='
     passphrase = b'karyakampak'
 
-    result = lib.sign(p12Path, hashx.encode('utf-8'), passphrase)
+    result = lib.sign(p12Path, hashx, passphrase)
     # Convert the result (hex string) to bytes
     try:
         signature_bytes = binascii.unhexlify(result)  # Convert hex to bytes
